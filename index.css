@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* 전체 공통 */
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    min-height: 100%;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+li {
+    /* list-style: none; */
+    /* cursor: pointer; */
+}
+
+a,
+p,
+span,
+button,
+input {
+    text-decoration: none;
+    outline: none;
+}
+
+a {
+    color: black;
+}
+
+/* ----- 전체 공통 ----- */
+
+/* Wrapper */
+
+#wrapper {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 0;
+}
+
+/* ----- Wrapper ----- */
+
+/* Upper-most(최상단) */
+
+.upper-most {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222831;
+    padding: 0px 20px 0px 20px;
+    color: white;
+    font-size: 11px;
+}
+
+.upper-most > div:not(:last-child) {
+    margin-right: 50px;
+}
+
+.upper-title {
+    font-weight: 900;
+}
+
+.upper-user {
+    /* border: 1px solid white; */
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+/* ----- Upper-most(최상단) ----- */
+
+/* Scroll Effect */
+
+.drop {
+    position: fixed;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.plus {
+    margin-top: 50px;
+}
+
+/* ----- Scroll Effect ----- */
+
+/* Main Content */
+
+.main-content-background {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-image: url(./bg01.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.main-content-overlay{
+    width: 100%;
+    height: 600px;
+    padding: 50px 20px 50px 20px;
+    backdrop-filter: blur(3px);
+    font-size: 24px;
+    line-height: 5px;
+}
+
+.main-introduce-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-up {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-overlay-content {
+    width: 300px;
+    border: 1px solid red;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 10px;
+}
+
+.main-myself {
+    margin: 100px 0px 150px 0;
+}
+
+.main-more-btn {
+    width: 150px;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    /* border: 1px solid red; */
+    background-color: #ffd269;
+    color: white;
+}
+/* ----- Main Content ----- */
+
+/* Menu-box */
+
+.menu-box {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.388);
+    /* background-color: rgba(211, 211, 211, 0.388); */
+    backdrop-filter: blur(5px);
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    z-index: 1;
+}
+
+.menu > p {
+    cursor: pointer;
+}
+
+/* .menu > p:hover {
+    color:#D72323;
+} */
+
+/* ----- Menu-box ----- */
+
+/* Main Section (공통) */
+
+.section {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.title {
+    font-size: 32px;
+    font-family: 'Anton', sans-serif;
+}
+
+/* ----- Main Section (공통) ----- */
+
+/* ABOUT ME */
+
+.about {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    color: rgb(26, 25, 25);
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-content {
+    width: 50%;
+    /* border: 1px solid red; */
+    transition: 0.5s;
+    text-align: justify;
+    line-height: 2;
+}
+
+.about-profile {
+    width: 50%;
+    transition: 0.5s;
+    line-height: 2;
+    text-align: left;
+    /* border: 1px solid blue; */
+}
+
+.about-profile > p > span {
+    font-weight: 500;
+    color: #D72323;
+}
+/* SKILLS */
+
+.skills {
+    width: 100%;
+    height: auto;
+    background-color: #FFD369;
+    color: black;
+    text-align: left;
+    z-index: 1;
+}
+
+.skill-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.show {
+    width: 30%;
+    height: 100px;
+    /* padding: 10px; */
+    background-color: #efefef;
+    text-align: center;
+    border-radius: 5px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transition: all 0.4s;
+    flex-grow: 0;
+    margin-bottom: 20px;
+    line-height: 35px;
+    transition-delay: 0s;
+
+}
+
+.show-title {
+    line-height: 60px;
+}
+
+.show-menu {
+    visibility: hidden;
+}
+
+.show-menu > p {
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* .hide {
+    width: 100%;
+    padding-top: 10px;
+    opacity: 0;
+    border-radius: 5px;
+    transition: all 0.21;
+    background-color: #efefef;
+} */
+
+.show:hover {
+    height: 300px;
+    transition: height 0.5s;
+}
+
+.show:hover .show-menu > p{
+    opacity: 1;
+    transition-delay: 0.5s;
+    visibility: visible;
+}
+
+
+/* PORTFOLIO */
+
+.portfolio {
+    height: 1200px;
+    background-color: #eee;
+    color: black;
+}
+
+/* CONTACT */
+.contact {
+    height: 400px;
+    background-color: #222831;
+    color: white;
+}
+
+.contact-site {
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 24px;
+}
+
+.contact-site > div > a {
+    color: white;
+    transition: 0.3s;
+}
+
+.contact-site > div > a:hover {
+    color:#ffd269;
+}
+
+.contact-site > div:not(:last-child) {
+    margin-right: 30px;
+}
+
+.contact-copy {
+    font-size: 13px;
+}
+
+/* ----- CONTACT ----- */
+
+/* Top BTN */
+.up-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #ffd269;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 17px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    top: 1000px;
+    right: 20px;
+    visibility: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.block {
+    visibility: visible;
+    z-index: 1;
+}
+
+/* ----- Top BTN ----- */
+
+/* Login Modal */
+
+.login-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.231);
+    display: none;  /* 평소엔 none이었다가 @ 클릭시 flex로 변경됨 */
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    backdrop-filter: blur(7px);
+}
+
+.close {
+    width: 30%;
+    height: 15%;
+    position: relative;
+}
+
+#close {
+    position: absolute;
+    top: 110px;
+    right: 15px;
+    z-index: 3;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.login-modal-overlay {
+    width: 30%;
+    height: 60%;
+    background-color: #eee;
+    position: absolute;
+    top: 100px;
+    border-radius: 3px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#login-form > div:not(:first-child) {
+    margin-top: 30px;
+}
+
+.admin-input > input[type=text], input[type=password] {
+    width: 250px;
+    height: 25px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.admin-input > input:focus {
+    outline: 1px solid #222831;
+}
+
+.admin-btn > button{
+    width: 260px;
+    height: 30px;
+    background-color: #D72323;
+    color: white;
+    border-radius: 3px;
+}
+
+.modal-none {
+    display: none;
+}
+
+
+
+/* Media Queries */
+
+/* ex. max-width: 768px  - 최대 width가 768px 이하인 경우에 적용
+        min-width: 768px - 최소 width가 지정된 768px 이상인 경우에 적용 */
+
+/* Desktop */
+
+/* Tablet */
+@media screen and (max-width: 1023px) {
+
+    .main-content-overlay {
+        background-color: rgba(0, 0, 0, 0.454);
+    }
+
+    .login-modal {
+        background-color: rgba(0, 0, 0, 0.53);
+    }
+
+    .close {
+        width: 70%;
+        height: 13%;
+    }
+    
+    .skill-box {
+        width: 130px;
+        margin-top: 20px;
+    }
+
+    .login-modal-overlay {
+        width: 70%;
+        height: 12%;
+    }
+
+    .up-btn {
+        top: 900px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px){
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-profile {
+        width: 100%;
+    }
+
+    .skills {
+        height: auto;
+    }
+
+    .show {
+        width: 45%;
+        margin-right: 15px;
+    }
+
+    .show:nth-child(even) {
+        clear: both;
+    }
+
+    .show:nth-child(odd) {
+        float: left;
+    }
+
+    .close {
+        width: 75%;
+        height: 10%;
+    }
+
+    .login-modal-overlay {
+        width: 75%;
+        height: 50%;
+    }
+    
+    .up-btn {
+        top: 700px;
+    }
+
+}
+
+
+/* @media screen and (max-width: 1300px), (max-height: 600px){
+    
+    .up-btn {
+        top: 620px;
+    }
+
+} */
+
+
+/* mediaquery 가로(landscape) 모드 */
+
+@media (orientation: landscape) {
+    .up-btn {
+        top: 700px;
+    }
+}

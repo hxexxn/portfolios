@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHE's Portfolio!</title>
+    <!-- css -->
+    <link rel="stylesheet" th:href="./css/index.css">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- page animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+
+        // 각 메뉴에 맞는 섹션으로 이동
+        function scrollMove(num) {
+            var offSet = $('#menu' + num).position();
+            $('html').animate({ scrollTop: offSet.top }, 300);
+            // console.log(offSet)
+        }
+
+    </script>
+</head>
+
+
+<body>
+
+    <!-- up btn -->
+    <div class="up-btn hm">
+        <a href="#home">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- wrapper -->
+    <div id="wrapper">
+
+
+
+        <!-- login / join -->
+        <div class="upper-most" id="home">
+            <div class="upper-title">
+                <p>KHE's Portfolio.</p>
+            </div>
+            <div class="upper-user">
+                <!-- <p>Hello, Raccoon!</p> -->
+                <div>
+                    <a href="#" style="color:white" class="admin-click">@</a>
+                </div>
+                <!-- <div>sign up</div> -->
+            </div>
+            <!-- <div>
+                <p>sign up</p>
+            </div> -->
+        </div>
+
+        <!-- main content -->
+        <div class="main-content-background">
+
+            <div class="main-content-overlay">
+
+                <div class="main-introduce-container">
+                    <div class="main-myself">
+                        <p class="main-up">Front-end Developer</p>
+                        <p style="font-family: 'Roboto', sans-serif; font-weight: 700;">
+                            KIM HYE EUN's Portfolio.
+                        </p>
+                    </div>
+                    <!-- 
+                    <div class="main-more-btn">
+                        <p>더 알아보기</p>
+                    </div> -->
+
+                </div>
+
+
+
+            </div>
+
+            </ㅗ>
+
+            <!-- main menu -->
+
+            <div class="menu-box">
+                <!-- <div class="menu">Home</div> -->
+                <div class="menu home hm">
+                    <p class="under" onclick="scrollMove('1')">
+                        HOME
+                    </p>
+                </div>
+
+                <div class="menu am">
+                    <p class="under" onclick="scrollMove('2')">
+                        ABOUT ME
+                    </p>
+                </div>
+
+                <div class="menu sk">
+                    <p class="under" onclick="scrollMove('3')">
+                        SKILLS
+                    </p>
+                </div>
+
+                <div class="menu pf">
+                    <p class="under" onclick="scrollMove('4')">
+                        PORTFOLIOS
+                    </p>
+                </div>
+
+                <div class="menu ct">
+                    <p class="under" onclick="scrollMove('5')">
+                        CONTACT
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- about me -->
+            <div class="about section" id="menu2" data-aos="fade-right">
+
+                <div class="about-content">
+                    <p class="title">About Me</p>
+                    <p>안녕하세요. 신입 프론트 엔드 개발자 김혜은입니다.</p>
+                    <p>
+                        <span style="color: #D72323; font-weight: 500;">
+                            좋은 코드는 어떤 코드일까? 어떻게 해야 좋은 디자인을 할 수 있을까?</span>
+                        개발 공부를 시작하고, 다른 사람들과 협업을 진행하면서 줄곧 고민해왔습니다.
+                        제가 이해하지 못 하면 결국 그 코드는 제게 좋지 않은 코드였고, 아무리 예쁜 디자인이라 하더라도
+                        사용하기가 불편하다면 의미가 없기 때문입니다.
+                    </p>
+                    <p>그렇기 때문에 저는 <span style="font-weight: 500;">누가 봐도 쉽고 이해할 수 있는 코드</span>가 <span
+                            style="color: #D72323; font-weight: 500;">좋은 코드</span>이며,
+                        <span style="font-weight: 500;">사용하기에 편리한 디자인</span>이 <span
+                            style="color: #D72323; font-weight: 500;">좋은 디자인</span>이라고 생각합니다.
+                    </p>
+                    <p>항상 이것을 잊지 않고, <span style="color: #D72323;">오늘보다 더 나은 내일의 개발자</span>가 될 수 있도록 노력하겠습니다.</p>
+                    <br>
+                    <p>2022년 2월 자바 국비 과정을 통해 처음 개발을 시작하게 되었고, 8월 수료 이후 현재 취업을 준비하고 있습니다.</p>
+                    <p style="text-align: right; color:lightgray">2022. 10.</p>
+                </div>
+                <div style="border-left: 1px dotted lightgray; width: 1px; height: auto; margin: 0px 20px;">
+
+                </div>
+                <div class="about-profile">
+                    <p class="title">Profiles</p>
+                    <p>
+                        <span>Name</span> : 김혜은 (Kim Hye Eun)
+                    </p>
+                    <p>
+                        <span>Date of Birth</span> : 93.10.10
+                    </p>
+                    <p>
+                        <span>Address</span> : 경상북도 구미
+                    </p>
+                    <p>
+                        <span>Email</span> : kyh5299@gmail.com
+                    </p>
+                    <p>
+                        <span>Phone</span> : 010 - 5013 - 2834
+                    </p>
+                    <p>
+                        <span>Career</span> :
+                    <p>
+                        <li>2017. 08 - 안동대학교 무역학과 졸업</li>
+                    </p>
+                    <p>
+                        <li>
+                            2022. 02 ~ 2022. 08 - 영남인재교육원 JAVA 개발자 양성 국비 과정 수료
+                        </li>
+                    </p>
+                    </p>
+                </div>
+
+
+
+            </div>
+
+            <!-- skills -->
+            <div class="skills section" id="menu3">
+                <p class="title">Skills</p>
+
+                <div class="skill-flex" data-aos="fade-up">
+
+                    <div class="show">
+                        <p class="show-title">HTML</p>
+                        <div class="show-menu">
+                            <p>하나</p>
+                            <p>둘</p>
+                            <p>셋</p>
+                            <p>넷</p>
+                        </div>
+                    </div>
+
+                    <div class="show">
+                        <p class="show-title">CSS</p>
+                        <div class="show-menu">
+                            <p>하나</p>
+                            <p>둘</p>
+                            <p>셋</p>
+                            <p>넷</p>
+                            <p>하나</p>
+                            <p>둘</p>
+                            <p>셋</p>
+                            <p>넷</p>
+                        </div>
+                    </div>
+
+
+                    <div class="show">
+                        <p class="show-title">Javascript</p>
+                        <div class="show-menu">
+                            <p>하나</p>
+                            <p>둘</p>
+                            <p>셋</p>
+                            <p>넷</p>
+                        </div>
+                    </div>
+
+
+                    <div class="show">
+                        <p class="show-title">JQuery</p>
+                        <div class="show-menu">
+                            <p>하나</p>
+                            <p>둘</p>
+                            <p>셋</p>
+                            <p>넷</p>
+                        </div>
+                    </div>
+
+
+                    <div class="show">
+                        <p class="show-title">Java</p>
+                        <div class="show-menu">
+                            <p>하나</p>
+                            <p>둘</p>
+                            <p>셋</p>
+                            <p>넷</p>
+                        </div>
+                    </div>
+
+
+                    <div class="show">
+                        <p class="show-title">MySQL</p>
+                        <div class="show-menu">
+                            <p>하나</p>
+                            <p>둘</p>
+                            <p>셋</p>
+                            <p>넷</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- portfolio -->
+            <div class="portfolio section" id="menu4">
+                <p class="title">Portfolios</p>
+                <div data-aos="fade-up">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta voluptate ex. Adipisci
+                        nihil,
+                        neque nemo amet non excepturi nisi nesciunt possimus eos quod accusantium impedit! Itaque facere
+                        illo
+                        architecto.</p>
+                </div>
+
+            </div>
+
+            <!-- contact -->
+            <div class="contact section" id="menu5">
+                <p class="title">Contact</p>
+
+                <div data-aos="fade-up">
+                    <div class="contact-site">
+                        <div>
+                            <a href="https://cosmicwhitetree.tistory.com/" target="_blank">
+                                <i class="fa-solid fa-square-rss"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/hxexxn" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+                        <!-- <div>
+                        <a href="#">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div> -->
+                    </div>
+                    <div class="contact-copy">
+                        <p>© 2022. Kim Hye Eun. All Rights Reserved.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="login-modal" class="login-modal">
+
+            <div class="close">
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </div>
+            <div class="login-modal-overlay">
+
+                <form id="login-form">
+
+                    <div style="text-align: center;">
+                        <p>Hello, Stranger!</p>
+                        <p style="font-size: 12px;">안타깝게도 관리자만 접근이 가능합니다 X-(</p>
+                    </div>
+
+                    <div class="admin-input">
+                        <input type="text" id="user_id" name="user_id" placeholder="enter your ID">
+                    </div>
+                    <div class="admin-input">
+                        <input type="password" id="user_pw" name="user_pw" placeholder="enter your Password">
+                    </div>
+
+                    <div class="admin-btn">
+                        <button type="submit">로그인</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+        <script src="./js/index.js"></script>
+
+        <script>
+            AOS.init({
+                easing: 'ease-out-back',
+                duration: 1000
+            });
+        </script>
+</body>
+
+</html>
