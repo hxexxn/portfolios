@@ -295,7 +295,7 @@ a {
 } */
 
 .show:hover {
-    height: 300px;
+    height: 200px;
     transition: height 0.5s;
 }
 
@@ -309,9 +309,51 @@ a {
 /* PORTFOLIO */
 
 .portfolio {
-    height: 1200px;
+    height: auto;
     background-color: #eee;
     color: black;
+}
+
+.portfolio-box {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pf-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pf-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.pf-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pf-info button {
+    background-color: #222831;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.pf-info button:hover {
+    background-color: #ffd269;
+    color: #222831;
+}
+
+.pf-info button:not(:last-child) {
+    margin-right: 50px;
 }
 
 /* CONTACT */
@@ -450,6 +492,36 @@ a {
     display: none;
 }
 
+/* pf-modal */
+
+.pf-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.231);
+    display: none;  /* 평소엔 none이었다가 @ 클릭시 flex로 변경됨 */
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    backdrop-filter: blur(7px);
+}
+
+.frog, .cat {
+    display: flex;
+}
+
+.pf-modal-overlay {
+    width: 30%;
+    height: 60%;
+    background-color: #eee;
+    position: absolute;
+    top: 100px;
+    border-radius: 3px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 
 
 /* Media Queries */

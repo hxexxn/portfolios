@@ -19,6 +19,9 @@
     <!-- page animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Bootstrap v5.0-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <script type="text/javascript">
 
@@ -194,24 +197,13 @@
                     <div class="show">
                         <p class="show-title">HTML</p>
                         <div class="show-menu">
-                            <p>하나</p>
-                            <p>둘</p>
-                            <p>셋</p>
-                            <p>넷</p>
                         </div>
                     </div>
 
                     <div class="show">
                         <p class="show-title">CSS</p>
                         <div class="show-menu">
-                            <p>하나</p>
-                            <p>둘</p>
-                            <p>셋</p>
-                            <p>넷</p>
-                            <p>하나</p>
-                            <p>둘</p>
-                            <p>셋</p>
-                            <p>넷</p>
+                            <p>Media 쿼리를 이용한 반응형 웹</p>
                         </div>
                     </div>
 
@@ -252,10 +244,7 @@
                     <div class="show">
                         <p class="show-title">MySQL</p>
                         <div class="show-menu">
-                            <p>하나</p>
-                            <p>둘</p>
-                            <p>셋</p>
-                            <p>넷</p>
+                            <p>CRUD</p>
                         </div>
                     </div>
 
@@ -266,12 +255,49 @@
             <!-- portfolio -->
             <div class="portfolio section" id="menu4">
                 <p class="title">Portfolios</p>
-                <div data-aos="fade-up">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta voluptate ex. Adipisci
-                        nihil,
-                        neque nemo amet non excepturi nisi nesciunt possimus eos quod accusantium impedit! Itaque facere
-                        illo
-                        architecto.</p>
+                <div>
+                    <!-- Frogame -->
+                    <div class="portfolio-box" data-aos="fade-up">
+
+                        <div class="pf-img">
+                            <div class="site-img">
+                                <img src="/frogame_main.png">
+                            </div>
+                            <div class="site-img">
+                                <img src="/frogame_populargame.png">
+                            </div>
+                            <div class="site-img">
+                                <img src="/frogame_admin.png">
+                            </div>
+                        </div>
+
+                        <div class="pf-info">
+                            <button onclick="window.open('/frogame.html')" class="frogame-modal" target="_blank">Read Me</button>
+                            <button onclick="window.open('https://github.com/hxexxn/FROGameTeamProject')">Github</button>
+                        </div>
+                        
+                    </div>
+                    <!-- Catudy -->
+                    <div class="portfolio-box" data-aos="fade-up">
+
+                        <div class="pf-img">
+                            <div class="site-img">
+                                <img src="/catudy_main.png">
+                            </div>
+                            <div class="site-img">
+                                <img src="/catudy_main_bottom.png">
+                            </div>
+                            <div class="site-img">
+                                <img src="/catudy_recruit.png">
+                            </div>
+                        </div>
+
+                        <div class="pf-info">
+                            <button onclick="window.open('/catudy.html')" class="catudy-modal">Read Me</button>
+                            <button onclick="window.open('https://github.com/youngsun0401/catudy')" target="_blank">Github</button>
+                        </div>
+                    </div>
+                    
                 </div>
 
             </div>
@@ -332,10 +358,22 @@
                         <button type="submit">로그인</button>
                     </div>
                 </form>
-
             </div>
 
         </div>
+
+        <div class="pf-modal" id="frogame">
+            <div class="pf-modal-overlay frog">
+
+            </div>
+        </div>
+
+        <div class="pf-modal" id="catudy">
+            <div class="pf-modal-overlay cat">
+
+            </div>
+        </div>
+
         <script src="./index.js"></script>
 
         <script>
@@ -344,6 +382,10 @@
                 duration: 1000
             });
         </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

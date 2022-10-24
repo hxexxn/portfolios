@@ -98,6 +98,12 @@ $(document).ready(function () {
         $('.login-modal').css('display', 'flex');
     });
 
+    // frog modal
+    $('.frogame-modal').click(function () {
+
+        $('.login-modal').css('display', 'flex');
+    });
+
     // modal close
     $('#close').click(function () {
         $('.login-modal').css('display', 'none');
@@ -107,7 +113,7 @@ $(document).ready(function () {
     // skill box를 누르면 해당 박스 아래에 있는 div hide가 아래로 내려간다. 한 번 더 누르면 원래 자리로 되돌아간다.
 
 
-    
+
     // var show = $('.show');
 
     // $(show).click(function(){
@@ -123,7 +129,7 @@ $(document).ready(function () {
     //         console.log(show.children());
     //         $(hide).slideToggle();
     //     }
-        
+
     // });
 
 
