@@ -327,6 +327,10 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .pf-img img {
@@ -506,23 +510,15 @@ a {
 
 /* Tablet */
 @media screen and (max-width: 1023px) {
-
-    .main-content-overlay {
-        background-color: rgba(0, 0, 0, 0.454);
-    }
-
-    .login-modal {
-        background-color: rgba(0, 0, 0, 0.53);
-    }
-
-    .close {
-        width: 70%;
-        height: 13%;
-    }
     
     .skill-box {
         width: 130px;
         margin-top: 20px;
+    }
+
+    
+    .pf-img {
+        flex-wrap: wrap;
     }
 
     .login-modal-overlay {
@@ -550,6 +546,10 @@ a {
         width: 100%;
     }
 
+    .pf-img {
+        flex-wrap: wrap;
+    }
+
     .skills {
         height: auto;
     }
@@ -567,15 +567,6 @@ a {
         float: left;
     }
 
-    .close {
-        width: 75%;
-        height: 10%;
-    }
-
-    .login-modal-overlay {
-        width: 75%;
-        height: 50%;
-    }
     
     .up-btn {
         top: 700px;
