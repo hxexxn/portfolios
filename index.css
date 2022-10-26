@@ -542,9 +542,12 @@ a {
         margin-top: 20px;
     }
 
-    
     .pf-img {
-        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .pf-content {
+        width: 100%;
     }
 
     .login-modal-overlay {
@@ -573,7 +576,11 @@ a {
     }
 
     .pf-img {
-        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .pf-content {
+        width: 100%;
     }
 
     .skills {
